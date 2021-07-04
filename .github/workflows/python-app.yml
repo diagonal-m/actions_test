@@ -12,8 +12,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build & run the Docker image
+    - name: Build the Docker image
       run: |
         docker build -f docker/Dockerfile -t actions --no-cache .
-        docker run -it --rm actions:latest
+        
 
+    - name: Run the Docker image
+      run: |
+        docker run -i actions:latest
