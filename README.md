@@ -1,2 +1,2 @@
-# actions_prac
+# actions_test
 Github Actionsの練習
