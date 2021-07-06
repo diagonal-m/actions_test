@@ -1,5 +1,3 @@
-import pandas as pd
+import os
 
-df = pd.DataFrame({'a': [1, 2, 3], 'b': [3, 2, 1]})
-print(df)
-
+print(os.environ.get('TEST'))
