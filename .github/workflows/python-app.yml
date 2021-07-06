@@ -19,4 +19,4 @@ jobs:
 
     - name: Run the Docker image
       run: |
-        docker run -i actions:latest
+        docker run -i -e "TEST2=${{ secrets.TEST2 }}" actions:latest
